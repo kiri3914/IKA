@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper wrapper-fancy-bg">
+	
+<div class="page">
+	<div class="container">
+				<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="index.html" itemprop="item"><i class="far fa-home"></i></a><meta itemprop="name" content="Главная"><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="kaizen-school.html" itemprop="item">Кайдзен школа</a><meta itemprop="name" content="Кайдзен школа"><meta itemprop="position" content="2"></li><li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span>Мастер-классы</span><meta itemprop="name" content="Мастер-классы"><meta itemprop="position" content="3"></li></ul>	</div>
+	<section class="block">
+		<div class="container">
+			<h1 class="block-title">Мастер-классы</h1>
+			        <div class="nav-wrapper ">
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="classes.html">Все</a>
+    </li>
+          <li class="">
+        <a href="classes/category/8.html">
+          Развитие        </a>
+      </li>
+      </ul>
+</div>
+				<div class="row display-flex">
+                                  <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="classes/effectiveness.html"
+                 class="post-thumbnail class-card
+                                             with-speaker                ">
+                                <div class="post-thumbnail-body">
+                  <div class="post-metadata">
+                                                                  <div class="post-metadata-item post-metadata-item-with-bg">
+                          Развитие                        </div>
+                                                                                      <div class="post-metadata-item">
+                                                  6 уроков                                              </div>
+                                      </div>
+                  <p class="post-thumbnail-title text-large">Результативность </p>
+                  <p class="post-thumbnail-subtitle">Что такое результативность и в чём её отличие от эффективности?</p>
+                </div>
+                                  <div class="post-thumbnail-footer">
+                                          <div class="post-speaker">
+                        <div class="post-speaker-img">
+                                                      <img src="https://storage.googleapis.com/margulan-storage/sm_4af5497616c318e7307bdabb7ffe04a7.png" alt=""/>                                                  </div>
+                        <div class="post-speaker-body">
+                          <p class="post-speaker-title">
+                            Маргулан Сейсембаев                          </p>
+                          <p class="post-speaker-subtitle">
+                            Бизнесмен, инвестор, исследователь жизни и путешественник                          </p>
+                        </div>
+                      </div>
+                                        </div>
+                                              </a>
+            </div>
+          				</div>
+									<!-- Pagination -->
+					<ul class="pagination">
+						<li class="prev"><a rel="prev" href="classes.html"><i class="far fa-angle-left"></i></a></li><li><a href="{% url 'clas' %}">1</a></li><li class="active"><a href="classes%3Fpage=2.html">2</a></li>					</ul>
+					<!-- End Pagination -->
+									</div>
+	</section>
+</div>
+	{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="wrapper ">
+	
+<script>
+	grecaptcha.ready(function () {
+		grecaptcha.execute('6LfG-64aAAAAANo58FvEJ4sHSkExUWPLqwc8KxhG', { action: 'purchase' }).then(function (token) {
+			var recaptchaResponse = document.getElementById('recaptchaResponse');
+			recaptchaResponse.value = token;
+		});
+	});
+</script>
+
+<div class="page">
+	<div class="container">
+				<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="../../index.html" itemprop="item"><i class="far fa-home"></i></a><meta itemprop="name" content="Главная"><meta itemprop="position" content="1"></li><li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span>Оформить подписку</span><meta itemprop="name" content="Оформить подписку"><meta itemprop="position" content="2"></li></ul>	</div>
+	<section class="checkout block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+          <p class="block-suptitle">Оформить подписку</p>
+          <h1 class="block-title">Месяц</h1>
+          <form method="post" accept-charset="utf-8" class="order-form" action="4.html"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>          <div class="input text required"><label for="name">Тел.номер</label><input type="text" name="name" class="form-control input-lg" placeholder="+996220776952" required="required" maxlength="255" id="name"/></div>          <div class="input text required"><label for="name">ФИО *</label><input type="text" name="name" class="form-control input-lg" placeholder="Иван Петров" required="required" maxlength="255" id="name"/></div>          <div class="input email required"><label for="email">E-mail *</label><input type="email" name="email" class="form-control input-lg" placeholder="example@mail.com" required="required" maxlength="255" id="email"/></div>          <div class="form-group">
+            <label for="promocode">Промокод</label>            <div class="input-group input-group-lg">
+              <input type="text" name="promocode" class="form-control input-lg" placeholder="Введите промокод, если есть"/>              <span class="input-group-btn">
+              <button id="order-form-promocode-btn" class="btn btn-default-primary btn-icon btn-lg" type="button">
+                <i class="far fa-sync"></i>
+              </button>
+            </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input checkbox"><input type="hidden" name="terms_agreement" value="0"/><label for="terms-agreement"><input type="checkbox" name="terms_agreement" value="1" checked="checked" id="terms-agreement"><span>Я ознакомился и согласен с <a href="../../pages/terms_of_service.html" target="_blank">Условиями оказания услуг</a></span></label></div>          </div>
+          <input type="hidden" name="package_id" value="4"/>          <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/>                    <button class="btn btn-primary btn-lg btn-block btn-submit" type="submit">Оплатить <span>19,00 $</span></button>          </form>          <br/>
+                                    <p>Новые мастер-классы Кайдзен Школы.</p>
+                          <p>6 новых статей каждый месяц.</p>
+                                            <p>
+              Образовательная платформа Маргулана Сейсембаева доступна на условиях ежемесячной подписки.            </p>
+                                <p>
+              Другие варианты подписки:            </p>
+            <p>
+                                                                              <a href="3.html" class="text-highlighted primary">
+                    Год - 225,00 $/год                  </a>
+                                                              или                                  <a href="5.html" class="text-highlighted primary">
+                    Год + - 585,00 $/год                  </a>
+                                                          </p>
+                    <p>
+            Отменить можно в любой момент!          </p>
+          <br/>
+                      <p class="text-small text-muted">
+              С Вашей карты автоматически будут списываться 19,00 $/мес, которые являются стандартной ценой участия.            </p>
+                    <p class="text-small text-muted">
+            Вы всегда можете отменить подписку в Вашем личном кабинете и больше списаний не будет.          </p>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+    {% endblock %}

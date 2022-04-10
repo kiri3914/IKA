@@ -1,0 +1,871 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %}
+
+<div class="wrapper wrapper-fancy-bg">
+	
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6LfG-64aAAAAANo58FvEJ4sHSkExUWPLqwc8KxhG', { action: 'purchase' }).then(function (token) {
+      var recaptchaResponse = document.getElementById('recaptchaResponse');
+      recaptchaResponse.value = token;
+    });
+  });
+</script>
+
+<section class="hero-block block">
+  <div class="container">
+    <div class="hero-block-inner" style="background-image: url('static/img/logoproz.png');">
+      <div class="row">
+        <div class="col-sm-7 col-md-6 col-md-offset-1 col-lg-5">
+          <p class="block-title h1">Ишкердик Академия</p>
+          <p class="block-subtitle">
+            Академиянын баардык курсу,тренингтери жана акциялары         </p>
+<!--                      <a href="{% url 'registrations' %}" class="btn btn-primary btn-lg scroll">-->
+<!--              Катталуу            </a>-->
+            <a href="{% url 'registrations' %}" class="btn btn-outline-default btn-lg">Жазылуу</a>                  </div>
+      </div>
+    </div>
+        <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="index.html" itemprop="item"><i class="far fa-home"></i></a><meta itemprop="name" content="Главная"><meta itemprop="position" content="1"></li><li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span>Кайдзен школа</span><meta itemprop="name" content="Кайдзен школа"><meta itemprop="position" content="2"></li></ul>  </div>
+</section>
+  <section class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <p class="block-title h2">
+            Курсы          </p>
+        </div>
+        <div class="col-xs-6">
+          <div class="slick-slider-navs text-right">
+            <div id="school-courses-slider-nav-prev" class="slick-slider-nav-prev">
+              <i class="far fa-arrow-left"></i>
+            </div>
+            <div id="school-courses-slider-nav-next" class="slick-slider-nav-next">
+              <i class="far fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slider-wrapper">
+        <div class="school-courses-slider slick-slider slick-center-mode">
+                      <div>
+              <a href="mentorships/mentorship2022.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type mentorship">Наставничество</div>
+                                                  <div class="post-metadata-item">Новый</div>
+                                                                          <div class="post-metadata-item">
+                                                                                          28 встреч                                                                                    </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Годовое наставничество с Маргуланом Сейсембаем</p>
+                      <p class="post-thumbnail-subtitle">Наставничество 2022 - цели:
+- Вдохновение 
+- Получить новые знания, посмотреть на свой бизнес, опыт и знания с другой перспективы
+- Перезагрузиться и найти свои точки роста - вот наши ключевые задачи в рамках программы Наставничества!
+
+Каждая активность в рамках программы нацелена на то, чтобы через год вы уверенно могли сказать - “Это изменило мою жизнь”.
+
+Ваша личная эффективность - ключевая ценность</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                      <div>
+              <a href="courses/talks.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type course">Курс</div>
+                                                                          <div class="post-metadata-item">
+                                                          7 модулей                                                      </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Эффективные переговоры</p>
+                      <p class="post-thumbnail-subtitle">Как достичь своих целей с помощью эффективных коммуникаций?</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                      <div>
+              <a href="courses/kaizen_networking.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type course">Курс</div>
+                                                                          <div class="post-metadata-item">
+                                                          5 модулей                                                      </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Кайдзен Нетворкинг</p>
+                      <p class="post-thumbnail-subtitle">Как получать новые возможности через связи и правильно ими управлять</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                      <div>
+              <a href="courses/teambuilding.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://storage.googleapis.com/margulan-storage/cover-h_6baaaa35f18689d354d18b56e92d0030.png" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type course">Курс</div>
+                                                                          <div class="post-metadata-item">
+                                                          3 модуля                                                      </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Командообразование</p>
+                      <p class="post-thumbnail-subtitle">Как правильно строить команду и эффективно ею управлять, чтобы достигать все поставленные цели.</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                      <div>
+              <a href="courses/kaizen.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSb7XJ6aV8YgUgvFYOt1RiTcgEDFz1NbweL5G63YQ=s900-c-k-c0x00ffffff-no-rj" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type course">Курс</div>
+                                                                          <div class="post-metadata-item">
+                                                          6 модулей                                                      </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Кайдзен планирование 2.0 + Power management</p>
+                      <p class="post-thumbnail-subtitle">Как правильно планировать свою жизнь и дела, чтобы стать по-настоящему эффективным, достигать всех поставленных целей без занятости 24/7.</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                                <div>
+              <a href="webinars/webinar_19032022.html"
+                 class="post-thumbnail course-card">
+                <div class="row display-flex">
+                  <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                                          <div class="post-thumbnail-img hidden-xs">
+                        <img src="https://storage.googleapis.com/margulan-storage/cover-v_393b7337e17e58a72d628c0980b47b1b.png" alt="post-thumbnail-img"/>                      </div>
+                      <div class="post-thumbnail-img with-bg visible-xs">
+                        <img src="https://storage.googleapis.com/margulan-storage/cover-h_393b7337e17e58a72d628c0980b47b1b.png" alt="post-thumbnail-img"/>                      </div>
+                                      </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                    <div class="post-thumbnail-body">
+                      <div class="post-metadata">
+                        <div class="post-type webinar">Вебинар</div>
+                                                  <div class="post-metadata-item">Новый</div>
+                                                                          <div class="post-metadata-item">
+                                                                                          1 урок                                                                                    </div>
+                                              </div>
+                      <p class="post-thumbnail-title h4">Вебинар | 17 марта</p>
+                      <p class="post-thumbnail-subtitle">Старт - 17 марта в 16:00 (Киев) / 17:00 (Москва) / 20:00 (Астана)</p>
+                                              <div class="post-thumbnail-footer">
+                          <div class="post-thumbnail-more">
+                            Подробнее                            <i class="far fa-arrow-right"></i>
+                          </div>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              </a>
+            </div>
+                  </div>
+      </div>
+              <div class="block-footer">
+          <a href="{% url 'clas' %}" class="btn btn-outline-primary btn-lg">Баардык курстар</a>        </div>
+          </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      <p class="block-title h2 text-center">
+        Мастер-класстар      </p>
+      <div class="nav-wrapper center">
+  <ul class="nav nav-pills">
+    <li class="">
+      <a href="{% url 'clas' %}">Баары</a>
+<!--    </li>-->
+<!--          <li class="">-->
+<!--        <a href="classes/category/8.html">-->
+<!--                  </a>-->
+<!--      </li>-->
+      </ul>
+</div>
+      <div class="row display-flex">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="{% url 'jany' %}"
+               class="post-thumbnail class-card
+               with-flag                              with-speaker                ">
+                              <div class="post-thumbnail-flag">
+                                      Новый                                  </div>
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              1 урок                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large">Жаны жашоо </p>
+                <p class="post-thumbnail-subtitle">Как собрать вокруг себя людей, которые будут приближать вас к вашим целям?</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Маргулан Сейсембаев                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="{% url 'express' %}"
+               class="post-thumbnail class-card
+                                             with-speaker                ">
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              9 уроков                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large">Экспресс бизнес</p>
+                <p class="post-thumbnail-subtitle">Как правильно вести себя в ситуации конфликта, чтобы минимизировать ущерб и выйти из него победителем?</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбек                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="{% url 'smm' %}"
+               class="post-thumbnail class-card
+                                             with-speaker                ">
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              5 уроков                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large">СММ курсу</p>
+                <p class="post-thumbnail-subtitle">Как воспринимать ошибки, чтобы они помогали шагать вверх?</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Маргулан Сейсембаев                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="{% url 'orator' %}"
+               class="post-thumbnail class-card
+                                             with-speaker                ">
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              4 урока                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large">Оратор+блогер</p>
+                <p class="post-thumbnail-subtitle">Как при помощи расширения диапазона мышления масштабировать свой бизнес?</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Маргулан Сейсембаев                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="classes/life_lessons.html"
+               class="post-thumbnail class-card
+                                             with-speaker                ">
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              4 урока                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large"></p>
+                <p class="post-thumbnail-subtitle">Какую роль вы играете в спектакле жизни? Кто автор сценария вашей жизни?</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Маргулан Сейсембаев                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="classes/fatherhood2.html"
+               class="post-thumbnail class-card
+                                             with-speaker                ">
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                                                            <div class="post-metadata-item post-metadata-item-with-bg">
+                        Развитие                      </div>
+                                                                              <div class="post-metadata-item">
+                                              7 уроков                                          </div>
+                                  </div>
+                <p class="post-thumbnail-title text-large">Часть 2. Отцовство как бизнес-проект</p>
+                <p class="post-thumbnail-subtitle">Достигаем успеха в воспитании детей и создании счастливой семьи</p>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logoproz.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Маргулан Сейсембаев                        </p>
+                        <p class="post-speaker-subtitle">
+                          Бизнесмен, инвестор, исследователь жизни и путешественник                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                                        </a>
+          </div>
+              </div>
+              <div class="block-footer">
+          <a href="{% url 'clas' %}" class="btn btn-outline-primary btn-lg">Баардык курстар</a>        </div>
+          </div>
+  </section>
+  <section id="packages" class="school-packages block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <p class="block-title h2 text-center">
+            Выберите свой пакет участия          </p>
+          <br>
+        </div>
+      </div>
+      <div class="row display-flex center">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package">
+                            <div class="package-title">Жаны жашоо курсу</div>
+              <div class="package-price">
+                  <span>
+                    10 000 сом                  </span>
+                              </div>
+              <div class="package-price-frequency">
+                <span></span>
+              </div>
+                              <p class="package-note">
+                  Только новые мастер-классы и статьи                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Жазылуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Кошумча маалымат</a>              </div>
+            </div>
+          </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package">
+                            <div class="package-title">сур тренинги </div>
+              <div class="package-price">
+                  <span>
+                    50 000 сом                  </span>
+                              </div>
+              <div class="package-price-frequency">
+                <span>-</span>
+              </div>
+                              <p class="package-note">
+                  Все мастер-классы и статьи                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Жазылуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Кошумча маалымат</a>              </div>
+            </div>
+          </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package popular">
+                              <div class="package-flag">Сунуштайбыз</div>
+                            <div class="package-title">Бизнес нолдон курсу</div>
+              <div class="package-price">
+                  <span>
+                    25 000 сом                   </span>
+                                  <span class="strikethrough">
+                                      </span>
+                              </div>
+              <div class="package-price-frequency">
+                <span></span>
+              </div>
+                              <p class="package-note">
+                  Все мастер-классы, статьи и курсы                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Жазылуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Кошумча маалымат</a>              </div>
+            </div>
+          </div>
+              </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="text-muted text-small text-center">
+                          </div>
+        </div>
+      </div>
+                      <div class="packages-help-block">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="packages-help-block-description">
+                <p class="h3 text-uppercase">
+                                  </p>
+                <div class="row">
+                  <div class="col-sm-8 col-md-12 col-lg-10">
+                    <p>
+                                         </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--            <div class="col-md-8">-->
+<!--              <div class="packages-help-block-inner">-->
+<!--                <form method="post" accept-charset="utf-8" class="order-help-form" action="https://margulan.info/orders/advice-request"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>                <div class="input text"><label for="name">ФИО *</label><input type="text" name="name" class="form-control input-lg transparent" placeholder="Иван Петров" id="name"/></div>                <div class="row form-row">-->
+<!--                  <div class="col-sm-6">-->
+<!--                    <div class="input tel"><label for="phone">Номер телефона *</label><input type="tel" name="phone" class="form-control input-lg transparent" id="phone"/></div>                  </div>-->
+<!--                  <div class="col-sm-6">-->
+<!--                    <div class="input email"><label for="email">E-mail *</label><input type="email" name="email" class="form-control input-lg transparent" placeholder="example@mail.com" id="email"/></div>                  </div>-->
+<!--                </div>-->
+<!--                <div class="input textarea"><label for="comment">Ваш запрос</label><textarea name="comment" class="form-control input-lg transparent" placeholder="Кратко опишите ваш запрос" rows="3" id="comment"></textarea></div>                <div class="row form-row">-->
+<!--                  <div class="col-sm-6">-->
+<!--                    <div class="form-group">-->
+<!--                      <div class="input checkbox"><input type="hidden" name="terms_agreement" value="0"/><label for="terms-agreement"><input type="checkbox" name="terms_agreement" value="1" checked="checked" id="terms-agreement"><span>Я ознакомился и согласен с <a href="pages/terms_of_service.html" target="_blank">Условиями оказания услуг</a></span></label></div>                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-sm-6">-->
+<!--                    <input type="hidden" name="package_id" value="4"/>                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/>                                        <button class="btn btn-primary btn-lg btn-block btn-submit" type="submit">Отправить</button>                  </div>-->
+<!--                </div>-->
+                </form>              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+  </section>
+<section class="testimonials block">
+  <div class="container">
+    <p class="block-title h2 text-center">Отзывы</p>
+    <br>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="slick-slider-wrapper">
+          <div class="school-testimonials-slider slick-slider slick-adaptive-height">
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Крутое тяжеловесное интервью про покупки/продажи компаний, яхты, вертолеты и самолеты.                      Для тех, кто не помнит героя, это он рассказывал в видео как торговался по компании и поднял итоговую цену в разы.                      Звук только жесть.                      <a href="https://t.me/TorbosovLife/880" class="text-muted" target="_blank">Смотреть полностью</a>
+                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Олег Торбосов                        </p>
+                        <p class="post-speaker-subtitle">
+                          СЕО Whitewill                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Первый влог с Маргуланом собрал больше 800 000 просмотров, второй получил более 4500 лайков!                      Невероятный инвестор и предприниматель, который начал свой путь пастухом, и стал долларовым миллиардером.                      <a href="https://www.youtube.com/watch?v=1hJqwcqqsI8&t=36s" class="text-muted" target="_blank">Смотреть полностью</a>
+                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Андрей Федорив                        </p>
+                        <p class="post-speaker-subtitle">
+                          СЕO Fedoriv Group                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Твой опыт бесценен!                      Ты бьешь в самое сердце и в этом твой успех, любого бизнесмена!                      У меня есть шанс научиться на твоих ошибках.                      Этот опыт бесценен!                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Евгений Черняк                        </p>
+                        <p class="post-speaker-subtitle">
+                          CEO Global Spirit, блогер BIG MONEY                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Твое влияние на нашу культуру и на общественную жизнь очень велико!                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Арманжан Байтасов                        </p>
+                        <p class="post-speaker-subtitle">
+                          Входит в список 50 самых влиятельных бизнесменов страны (Forbes Kazakhstan)                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Курсы Образовательной платформы Маргулана - один из самых мощных инструментов для прокачки личной эффективности для собственника любого бизнеса.                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Игорь Рыбаков                        </p>
+                        <p class="post-speaker-subtitle">
+                          Предприниматель, участник списка Forbes, инвестор, основатель X10 ACADEMY                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Курс "Кайдзен планирование" перевернул мое представление о постановке и достижении любых целей.                      Благодаря Кайдзен все можно достичь намного быстрее и без лишних усилий.                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Нурлан Сабуров                        </p>
+                        <p class="post-speaker-subtitle">
+                          Известный казахский и российский комик, выступающий в жанре стендап                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-slider-wrapper">
+          <div class="school-testimonials-avatars-slider slick-slider">
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-1.jpg%3F315532801'%}" alt="Олег Торбосов"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-2.jpg%3F315532801'%}" alt="Андрей Федорив"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-3.jpg%3F315532801'%}" alt="Евгений Черняк"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-4.jpg%3F315532801'%}" alt="Арманжан Байтасов"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-5.jpg%3F315532801'%}" alt="Игорь Рыбаков"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-6.jpg%3F315532801'%}" alt="Нурлан Сабуров"/>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-lg-2">
+        <div class="faq-help-block-description">
+          <p class="h2 block-title">Остались вопросы?</p>
+        </div>
+      </div>
+      <div class="col-sm-8 col-lg-8 col-lg-offset-2">
+        <div class="panel-group panel-group-bordered" id="faq-accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default active">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-5">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-5" aria-expanded="true" aria-controls="faq-accordion-panel-5">
+                  Что такое образовательная платформа Маргулана Сейсембаева?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-5">
+              <div class="panel-body">
+                <p>
+                  Margulan.info – это уникальная экосистема и персональная социальная сеть, которая соединяет уникальный опыт Маргулана с новейшими образовательными практиками и возможностями открытой коммуникации как с Маргуланом так и с другими участниками.                  Вы получаете полезный и практический контент, который вдохновляет, дает новые инструменты и навыки для выхода на новый уровень в вашей карьере, бизнесе и личной эффективности.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-1">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-1" aria-expanded="true" aria-controls="faq-accordion-panel-1">
+                  Чем отличаются мастер-классы по подписке от курсов Кайдзен школы?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-1">
+              <div class="panel-body">
+                <p>
+                  Начнем с того, что мастер-классы по подписке — это образовательный сериал, где пошагово Маргулан передает свой опыт и компетенции, которые упакованы в небольшие курсы (до 60 мин.) и короткие и емкие уроки, чтобы вы удобно получили самую суть.                </p>
+                <p>
+                  Кайдзен школа — это как полнометражные фильмы, это большие курсы, созданные чтобы получить инструменты, практические материалы, знания и практику в конкретной области.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-2">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-2" aria-expanded="true" aria-controls="faq-accordion-panel-2">
+                  Почему в пакете "Месяц" (помесячная подписка) доступны только новые мастер-классы?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-2">
+              <div class="panel-body">
+                <p>
+                  Месячную подписку мы создали для тех, кто хочет попробовать и сомневающихся.                  А с сомнениями хорошо бороться дисциплиной и практикой.                  Поэтому, мастер-классы в пакете "Месяц" доступны определенное количество времени, чтобы подтолкнуть пройти, освоить и применить на практике.                  Обращаем ваше внимание на то, что курсы Кайдзен школы не доступны в пакете Месяц, только мастер-классы и статьи с пометкой "Новое".                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-3">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-3" aria-expanded="true" aria-controls="faq-accordion-panel-3">
+                  Смогу ли я, уже купив месячную подписку, перейти на годовую?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-3">
+              <div class="panel-body">
+                <p>
+                  Да, это возможно сделать прямо в личном кабинете, просто доплатив разницу стоимости пакетов.                  Обращаем ваше внимание на то, что приобретая Годовую подписку на Платформу, вы получаете доступ ко всем мастер-классам Маргулана.                  Доступ к курсам Кайдзен школы открывается на пакете Год+.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-4">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-4" aria-expanded="true" aria-controls="faq-accordion-panel-4">
+                  Как я могу получить доступ ко всем курсам Платформы Маргулана?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-4">
+              <div class="panel-body">
+                <p>
+                  Это возможно сделать, оформив годовую подписку на пакет Год+.                  В этом пакете открывается самый полный доступ ко всем мастер-классам, статьям, вебинарам и курсам Кайдзен школы на год.                  Оформляя подписку на пакете Год+, вы получаете доступ не только к опубликованным курсам и мастер-классам Платформы, но и к будущим курсам, которые будут выходить в течение всего периода действия подписки.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-6">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-6" aria-expanded="true" aria-controls="faq-accordion-panel-6">
+                  А платформа обновляется?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-6">
+              <div class="panel-body">
+                <p>
+                  Да, ежемесячно на платформе выходят новые статьи и мастер-классы.                  Обо всех обновлениях подписчики узнают первыми из рассылок на email и в чат-бот.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-8">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-8" aria-expanded="true" aria-controls="faq-accordion-panel-8">
+                  Возможно ли учиться без подписки?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-8">
+              <div class="panel-body">
+                <p>
+                  Да, на нашем сайте есть курсы, которые можно приобрести отдельно.                  Например, "Кайдзен планирование" и "Командообразование".                  Мастер-классы, статьи и вебинар-сессии доступны исключительно по подписке.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-9">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-9" aria-expanded="true" aria-controls="faq-accordion-panel-9">
+                  При оформлении подписки на месяц/год, она будет действовать до конца текущего месяца/года?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-9">
+              <div class="panel-body">
+                <p>
+                  Срок действия подписки - 1 календарный месяц/год с момента оплаты.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-10">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-10" aria-expanded="true" aria-controls="faq-accordion-panel-10">
+                  Для подписок предусмотрено автопродление.                  Что это?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-10">
+              <div class="panel-body">
+                <p>
+                  По истечении срока действия подписки, она будет продлена автоматически.                  Отключить автопродление могут авторизованные пользователи в разделе "Подписка" личного кабинета.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-11">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-11" aria-expanded="true" aria-controls="faq-accordion-panel-11">
+                  Могу ли я отказаться от автопродления подписки?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-11">
+              <div class="panel-body">
+                <p>
+                  Конечно, в любой момент, нажав кнопку "Отменить подписку" в разделе "Подписка" личного кабинета.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-7">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="kaizen-school.html#faq-accordion-panel-7" aria-expanded="true" aria-controls="faq-accordion-panel-7">
+                  Могу ли я вернуть деньги?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-7">
+              <div class="panel-body">
+                <p>
+                  Заявка на возврат средств может быть принята к рассмотрению в течение 14 дней с момента оплаты при условии, что составлена она с учетом всех требований, обозначенных в нашем                  <a href="pages/terms_of_service.html#item-11">пользовательском соглашении</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

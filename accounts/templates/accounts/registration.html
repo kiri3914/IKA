@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper">
+    <script>
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6LfG-64aAAAAANo58FvEJ4sHSkExUWPLqwc8KxhG', { action: 'registration_for_course' }).then(function (token) {
+      var recaptchaResponse = document.getElementById('recaptchaResponse');
+      recaptchaResponse.value = token;
+    });
+  });
+
+
+
+    </script>
+
+    <div class="page">
+        <div class="container">
+            <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a
+                        href="{% url 'home' %}" itemprop="item"><i class="far fa-home"></i></a>
+                    <meta itemprop="name" content="Главная">
+                    <meta itemprop="position" content="1">
+                </li>
+                <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span>Зарегистрироваться </span>
+                    <meta itemprop="name" content="Зарегистрироваться ">
+                    <meta itemprop="position" content="2">
+                </li>
+            </ul>
+        </div>
+        <section class="checkout checkout-course block">
+            <div class="container">
+                <h1 class="block-title">Зарегистрироваться </h1>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6 col-lg-5 col-lg-push-7">
+                        <div class="checkout-course-form">
+                            <p class="block-subtitle">
+                                Чтобы зарегистрироваться, пожалуйста, укажите ваши данные </p>
+                            <form action="{% url 'registrations' %}" method="POST" accept-charset="utf-8"
+                                  class="early-bird-course-form">{% csrf_token %}
+                                <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+                                <div class="input text required"><label for="name">ФИО *</label><input type="text"
+
+                                                                                                       class="form-control input-lg"
+                                                                                                       placeholder="Иван Петров"
+                                                                                                       required="required"
+                                                                                                       maxlength="255"
+                                                                                                       name="first_name"
+                                                                                                       id="first_name"/>
+                                </div>
+
+                                <div class="input tel required">Тел.номер<input type="text" name="phone"
+                                                                                class="form-control input-lg"
+                                                                                placeholder="+996 000 00 00 00"
+                                                                                maxlength="50" id="phone"/></div>
+                                <div class="input email required"><label for="email">E-mail *</label><input type="email"
+                                                                                                            name="email"
+                                                                                                            class="form-control input-lg"
+                                                                                                            placeholder="example@mail.com"
+                                                                                                            required="required"
+                                                                                                            maxlength="255"
+                                                                                                            id="email"/>
+                                </div>
+                                <div class="input text">
+                                    <label class="label" for="name">Логин</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Придумайте логин"
+                                           name="username"
+                                           required="required"
+                                           id="username"
+                                    >
+                                </div>
+                                <div class="input text">
+                                    <label class="label" for="password">Пароль</label>
+                                    <input type="password" class="form-control" placeholder="Password" name="password"
+                                           required>
+                                </div>
+
+                                <div class="input text"><label class="label" for="password2">Повторите пароль</label>
+                                    <input type="password" class="form-control" placeholder="Confirm Password"
+                                           name="confirm_password" required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <div class="input checkbox"><input type="hidden" name="terms_agreement"
+                                                                       value="0"/><label for="terms-agreement"><input
+                                            type="checkbox" name="terms_agreement" value="1" checked="checked"
+                                            id="terms-agreement"><span>Я ознакомился и согласен с <a
+                                            href="../../pages/terms_of_service.html" target="_blank">Условиями оказания услуг</a></span></label>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="course_id" value="56"/> <input type="hidden"
+                                                                                          name="recaptcha_response"
+                                                                                          id="recaptchaResponse"/>
+                                <button class="btn btn-primary btn-lg btn-block btn-submit" type="submit">
+                                    Сатып алуу</button>
+                            </form>
+                            <br/>
+                            <p class="text-small text-muted">
+                                После регистрации наш менеджер свяжется с вами и уточнит все детали. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,494 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper wrapper-fancy-bg">
+	
+<section class="home-preview block">
+  <div class="container">
+    <div class="text-center">
+      <p class="block-suptitle">Ишкердик Академия</p>
+      <p class="block-title h1">Окуу борбору</p>
+              <a href="{% url 'registrations' %}" class="btn btn-primary btn-lg scroll">
+          Жазылуу       </a>
+        <a href="../login%3Fredirect=%252Fkz%252F.html" class="btn btn-outline-default btn-lg">Кируу</a>          </div>
+  </div>
+  <div class="home-preview-bg">
+    <img src="{% static 'img/logoproz.png' %}" alt="preview-img"/>  </div>
+</section>
+  <section class="home-feed block">
+    <div class="container">
+            <div class="row masonry-grid">
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'syr' %}"
+               class="post-thumbnail boxed
+               with-flag               with-speaker">
+                              <div class="post-thumbnail-flag">
+                                      Новое                                  </div>
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                                              <div id="veve">
+                <p class="post-thumbnail-title h4">Сүр тренинги </p>
+                <p class="post-thumbnail-subtitle">
+                  Оратордук исскуство жана башкалар ?                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                    2022                  </div>
+                                      <div class="post-metadata-item">
+
+                                         </div>
+                                  </div>
+              </div>
+                                              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'jany' %}"
+               class="post-thumbnail boxed
+               with-flag               with-speaker">
+                              <div class="pсур ost-thumbnail-flag">
+                                      Новое                                  </div>
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">Жаңы жашоо тренинги</p>
+                <p class="post-thumbnail-subtitle">
+                  жаңы жашоо тренинги - жашоону жаңы баштагыңыз келсе               </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                   2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                         </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt="this is photo"/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'akcha' %}"
+               class="post-thumbnail boxed
+               with-flag               with-speaker">
+                              <div class="post-thumbnail-flag">
+                                      Новое                                  </div>
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">Акча сарптоо курсу?</p>
+                <p class="post-thumbnail-subtitle">
+                  Кантип акчаны туура колдонуу ?».                 </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                     2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                        </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt="photo"/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбековдун командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'express' %}"
+               class="post-thumbnail boxed
+               with-flag               with-speaker">
+                              <div class="post-thumbnail-flag">
+                                      Новое                                  </div>
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">Экспресс Бизнес</p>
+                <p class="post-thumbnail-subtitle">
+                  Кытайдан товар алууну уйронуу?
+                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                   2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                         </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                       </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'jardam' %}"
+               class="post-thumbnail boxed
+                              with-speaker">
+                                            <div class="post-thumbnail-img">
+                  <img src="https://static10.tgstat.ru/channels/_0/79/79988057745c38de23f73e1ddb5bbe81.jpg" alt="post-thumbnail-img"/>                </div>
+                            <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">Бизнес Тренерлерден жардам алуу! </p>
+                <p class="post-thumbnail-subtitle">
+                  Бизнес баштаганда кандай каталарды кыласынар?                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                     2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                         </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                      </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'orator' %}"
+               class="post-thumbnail boxed
+                              with-speaker">
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">Оратор+блоггер! </p>
+                <p class="post-thumbnail-subtitle">
+                  Оратордук исскуство жана блоггер болуу жолдору                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                    2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                        </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                          iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href="{% url 'smm' %}"
+               class="post-thumbnail boxed
+                              with-speaker">
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">СММ курсу</p>
+                <p class="post-thumbnail-subtitle">
+                  СММ + Таргет курсу сиздин бизнессинизди реклама кылуу жолдору                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                     2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                         </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Мыктыбек Арстанбектин командасы                        </p>
+                        <p class="post-speaker-subtitle">
+                           iakademy.com                        </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+                  <div class="col-xs-12 col-sm-6 masonry-grid-item">
+            <a href=""
+               class="post-thumbnail boxed
+                              with-speaker">
+                                          <div class="post-thumbnail-body">
+                <div class="post-metadata">
+                  <div class="post-metadata-item post-type article">Статья</div>
+                                  </div>
+                <p class="post-thumbnail-title h4">БН курсу  </p>
+                <p class="post-thumbnail-subtitle">
+                  Бизнес онлайн курсу                </p>
+                <div class="post-metadata">
+                  <div class="post-metadata-item">
+                     2022                  </div>
+                                      <div class="post-metadata-item">
+                      &asymp;
+                                         </div>
+                                  </div>
+              </div>
+                              <div class="post-thumbnail-footer">
+                                      <div class="post-speaker">
+                      <div class="post-speaker-img">
+                                                  <img src="{% static 'img/logored.png' %}" alt=""/>                                              </div>
+                      <div class="post-speaker-body">
+                        <p class="post-speaker-title">
+                          Ишкердик Академия                        </p>
+                        <p class="post-speaker-subtitle">
+                           iakademy.com                         </p>
+                      </div>
+                    </div>
+                                    </div>
+                          </a>
+          </div>
+              </div>
+              <div class="block-footer">
+          <a href="{% url 'aka' %}" class="btn btn-outline-primary btn-lg">Кошумча Маалымат(показать больше)</a>        </div>
+          </div>
+  </section>
+  <section id="packages" class="home-packages block">
+    <div class="container">
+      <div class="package package-compact">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="package-title">
+              азыр жазылып алыныз  19,00 $ / айына            </div>
+            <div class="package-body">
+              <p class="text-large">
+                Ишкердик академиясынын курсуна доступ алгыла              </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-md-offset-1">
+                          <a href="{% url 'registrations' %}" class="btn btn-primary btn-lg btn-block">Сатып алуу</a>                        <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Кошумча маалымат (Подробнее о пакетах)</a>          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="faq block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-lg-2">
+        <div class="faq-help-block-description">
+          <p class="h2 block-title">Дагы суроолорунуз барбы?</p>
+        </div>
+      </div>
+      <div class="col-sm-8 col-lg-8 col-lg-offset-2">
+        <div class="panel-group panel-group-bordered" id="faq-accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default active">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-5">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-accordion-panel-5" aria-expanded="true" aria-controls="faq-accordion-panel-5">
+                  Ишкердик академия деген эмне??                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-5">
+              <div class="panel-body">
+                <p>
+                  iakademy.com – бул  уникальная экосистема и персональная социальная сеть, которая соединяет уникальный опыт Маргулана с новейшими образовательными практиками и возможностями открытой коммуникации как с Маргуланом так и с другими участниками.                  Вы получаете полезный и практический контент, который вдохновляет, дает новые инструменты и навыки для выхода на новый уровень в вашей карьере, бизнесе и личной эффективности.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-1">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-accordion-panel-1" aria-expanded="true" aria-controls="faq-accordion-panel-1">
+                  Чем отличаются мастер-классы по подписке от курсов Кайдзен школы?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-1">
+              <div class="panel-body">
+                <p>
+                  Начнем с того, что мастер-классы по подписке — это образовательный сериал, где пошагово Маргулан передает свой опыт и компетенции, которые упакованы в небольшие курсы (до 60 мин.) и короткие и емкие уроки, чтобы вы удобно получили самую суть.                </p>
+                <p>
+                  Кайдзен школа — это как полнометражные фильмы, это большие курсы, созданные чтобы получить инструменты, практические материалы, знания и практику в конкретной области.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-2">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-2" aria-expanded="true" aria-controls="faq-accordion-panel-2">
+                  Почему в пакете "Месяц" (помесячная подписка) доступны только новые мастер-классы?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-2">
+              <div class="panel-body">
+                <p>
+                  Месячную подписку мы создали для тех, кто хочет попробовать и сомневающихся.                  А с сомнениями хорошо бороться дисциплиной и практикой.                  Поэтому, мастер-классы в пакете "Месяц" доступны определенное количество времени, чтобы подтолкнуть пройти, освоить и применить на практике.                  Обращаем ваше внимание на то, что курсы Кайдзен школы не доступны в пакете Месяц, только мастер-классы и статьи с пометкой "Новое".                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-3">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-3" aria-expanded="true" aria-controls="faq-accordion-panel-3">
+                  Смогу ли я, уже купив месячную подписку, перейти на годовую?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-3">
+              <div class="panel-body">
+                <p>
+                  Да, это возможно сделать прямо в личном кабинете, просто доплатив разницу стоимости пакетов.                  Обращаем ваше внимание на то, что приобретая Годовую подписку на Платформу, вы получаете доступ ко всем мастер-классам Маргулана.                  Доступ к курсам Кайдзен школы открывается на пакете Год+.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-4">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-4" aria-expanded="true" aria-controls="faq-accordion-panel-4">
+                  Как я могу получить доступ ко всем курсам Платформы Маргулана?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-4">
+              <div class="panel-body">
+                <p>
+                  Это возможно сделать, оформив годовую подписку на пакет Год+.                  В этом пакете открывается самый полный доступ ко всем мастер-классам, статьям, вебинарам и курсам Кайдзен школы на год.                  Оформляя подписку на пакете Год+, вы получаете доступ не только к опубликованным курсам и мастер-классам Платформы, но и к будущим курсам, которые будут выходить в течение всего периода действия подписки.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-6">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-6" aria-expanded="true" aria-controls="faq-accordion-panel-6">
+                  А платформа обновляется?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-6">
+              <div class="panel-body">
+                <p>
+                  Да, ежемесячно на платформе выходят новые статьи и мастер-классы.                  Обо всех обновлениях подписчики узнают первыми из рассылок на email и в чат-бот.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-8">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-8" aria-expanded="true" aria-controls="faq-accordion-panel-8">
+                  Возможно ли учиться без подписки?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-8">
+              <div class="panel-body">
+                <p>
+                  Да, на нашем сайте есть курсы, которые можно приобрести отдельно.                  Например, "Кайдзен планирование" и "Командообразование".                  Мастер-классы, статьи и вебинар-сессии доступны исключительно по подписке.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-9">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-9" aria-expanded="true" aria-controls="faq-accordion-panel-9">
+                  При оформлении подписки на месяц/год, она будет действовать до конца текущего месяца/года?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-9">
+              <div class="panel-body">
+                <p>
+                  Срок действия подписки - 1 календарный месяц/год с момента оплаты.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-10">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-10" aria-expanded="true" aria-controls="faq-accordion-panel-10">
+                  Для подписок предусмотрено автопродление.                  Что это?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-10">
+              <div class="panel-body">
+                <p>
+                  По истечении срока действия подписки, она будет продлена автоматически.                  Отключить автопродление могут авторизованные пользователи в разделе "Подписка" личного кабинета.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-11">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-11" aria-expanded="true" aria-controls="faq-accordion-panel-11">
+                  Могу ли я отказаться от автопродления подписки?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-11">
+              <div class="panel-body">
+                <p>
+                  Конечно, в любой момент, нажав кнопку "Отменить подписку" в разделе "Подписка" личного кабинета.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-7">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion" href="index.html#faq-accordion-panel-7" aria-expanded="true" aria-controls="faq-accordion-panel-7">
+                  Могу ли я вернуть деньги?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-accordion-panel-heading-7">
+              <div class="panel-body">
+                <p>
+                  Заявка на возврат средств может быть принята к рассмотрению в течение 14 дней с момента оплаты при условии, что составлена она с учетом всех требований, обозначенных в нашем                  <a href="../pages/terms_of_service.html#item-11">пользовательском соглашении</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	{% endblock %}

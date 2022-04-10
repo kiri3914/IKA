@@ -1,0 +1,1041 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper wrapper-fancy-bg">
+	
+<script>
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6LfG-64aAAAAANo58FvEJ4sHSkExUWPLqwc8KxhG', { action: 'purchase' }).then(function (token) {
+      var recaptchaResponse = document.getElementById('recaptchaResponse');
+      recaptchaResponse.value = token;
+    });
+  });
+</script>
+
+<section class="hero-block block">
+  <div class="container">
+    <div class="hero-block-inner" style="background-image: url('static/img/logoproz.png');">
+      <div class="row">
+        <div class="col-sm-7 col-md-6 col-md-offset-1 col-lg-5">
+          <p class="block-title h1">Бизнес нолдон</p>
+          <p class="block-subtitle">
+            Бизнессти нолдон бугун башта          </p>
+                      <a href="{% url 'registrations' %}" class="btn btn-primary btn-lg scroll">
+              Катталуу            </a>
+                  </div>
+      </div>
+    </div>
+<!--        <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="index.html" itemprop="item"><i class="far fa-home"></i></a><meta itemprop="name" content="Главная"><meta itemprop="position" content="1"></li><li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span>Кайдзен уб</span><meta itemprop="name" content="Кайдзен клуб"><meta itemprop="position" content="2"></li></ul>  </div>-->
+</section>
+<section class="club-mission block">
+  <div class="container">
+    <p class="block-title h2 text-center">Миссия клуба</p>
+    <div class="club-mission-wrapper">
+      <div class="row display-flex">
+        <div class="col-xs-12 col-md-6">
+          <p>
+            <b>Кайдзен Клуб - международное бизнес-сообщество.</b>
+            Мы создали экосистему продуктов, материалов и возможности нетворкинга для развития и масштабирования вашего бизнеса, взаимной поддержки и развития связей среди предпринимателей и топ-менеджеров.          </p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <p>
+            Каждый член клуба не просто перенимает опыт, делится своими кейсами и компетенциями, но и может внести вклад в развитие других членов Клуба.          </p>
+          <p>
+            Все члены Кайдзен Клуба - предприниматели и топ-менеджеры с высоким уровнем репутации.          </p>
+        </div>
+      </div>
+      <div class="row display-flex">
+        <div class="col-xs-12 col-md-6 col-md-push-6">
+          <br>
+          <p class="h5">
+            В чем наша особенность?          </p>
+          <ul class="list list-check">
+            <li>
+              Мы объединяем людей, которые стремятся к саморазвитию.            </li>
+            <li>
+              Лучшие методики и практики саморазвития от ведущих экспертов доступны участникам Клуба.            </li>
+            <li>
+              Вы получаете возможность легко найти единомышленников среди участников Клуба чтобы обмениваться опытом и знаниями.            </li>
+            <li>
+              Наши наставники и менторы окажут вам поддержку и содействие в ваших начинаниях и саморазвитии.            </li>
+            <li>
+              Новые люди это новые возможности как для вашего бизнеса, так и лично для вас.            </li>
+          </ul>
+          <p>
+            Надеюсь, вы станете членами нашей большой семьи!          </p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <p class="h5">
+                <span class="text-small">С уважением,</span>
+                <br>
+                Мыктыбек Арстанбек              </p>
+            </div>
+            <div class="col-xs-8 col-sm-5 col-sm-offset-1">
+              <div class="club-mission-sign">
+                <img src="img/club/sign.png%3F315532801" class="img-responsive" alt=""/>              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-md-pull-6">
+          <div class="club-mission-img">
+            <img src="{% static 'img/sqs.jpg'%}" alt="speaker"/>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="club-benefits block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <p class="block-title h2">
+          Бизнес нолдон артыкчылыгы  </p>
+        <p class="block-subtitle">
+          Участвуйте  в мероприятиях различных форматов и находите единомышленников        </p>
+      </div>
+    </div>
+    <div class="row display-flex">
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">01.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/lecture.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Слеты клуба с участием резидентов со всего мира            </div>
+            <div class="benefit-subtitle">
+              Слеты проводятся 2 раза в год в формате масштабных форумов, pre-party, after-party c Маргуланом. Локации: Анталия, ОАЭ и другие            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-1" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">02.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/online-learning.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Встречи с Маргуланом Сейсембаем и спикерами клуба            </div>
+            <div class="benefit-subtitle">
+              Ежемесячные закрытые онлайн встречи членов клуба - владельцев и топ-менеджеров крупных компаний.              Наработанный опыт, успешные кейсы, подводные камни, мотивация, новые возможности. У каждого участника встреч есть возможность задать вопрос и получить ответ сразу            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-2" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">03.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/video.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Доступ к обучающим программам Кайдзен Школы            </div>
+            <div class="benefit-subtitle">
+              Из любой точки мира и в любое время обучайтесь ценным инструментам роста и масштабирования личной эффективности и своего бизнеса.              Каждый участник Кайдзен Клуба получает полный доступ к обучающим материалам Образовательной платформы Маргулана на время членства в Клубе            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-3" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">04.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/conversation-1.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Оффлайн встречи в вашем городе            </div>
+            <div class="benefit-subtitle">
+              Каждый месяц в вашем городе будут проводиться бизнес-митинги с другими членами Клуба для знакомства, обмена опытом, нетворкинга и развития            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-4" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">05.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/idea.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Мастермайнд сессии            </div>
+            <div class="benefit-subtitle">
+              Каждый месяц онлайн встречи членов клуба с детальными разборами конкретных кейсов и вопросов членов Клуба            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-5" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">06.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/presentation.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Нетворкинг встречи по нишам            </div>
+            <div class="benefit-subtitle">
+              Каждый участник при вступлении в Кайдзен Клуб имеет возможность находить партнеров и наставников в своей нише.              Обмениваться опытом, кейсами и компетенциями в своей сфере.              Это дает ощутимые результаты в развитии и масштабировании проектов            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-6" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">07.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/qa.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Закрытые чаты для нетворкинга и взаимопомощи            </div>
+            <div class="benefit-subtitle">
+              Поддержка 24/7 с консьерж сервисом для максимально быстрого решения любого вопроса.              Члены Кайдзен Клуба получают доступ в Telegram чат с Маргуланом, а также закрытые экспертные чаты, что значительно ускоряет получение ответов на свои запросы и действительно нужной и ценной информации            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-7" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="benefit">
+          <div class="benefit-inner">
+            <div class="benefit-number">08.</div>
+            <div class="benefit-icon">
+              <img src="{% static 'img/icons/laugh.svg%3F315532801'%}" alt=""/>            </div>
+            <div class="benefit-title h4">
+              Система бадди            </div>
+            <div class="benefit-subtitle">
+              Кайдзен Клуб предлагает всем членам и кандидатам на пакетах "Бизнес" и "Премиум" стать бадди для другого участника на том же пакете            </div>
+            <div class="benefit-inner-footer">
+              <a href="kaizen-club.html#modal-benefit-8" class="btn btn-outline-primary" data-toggle="modal">
+                Подробнее              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+<!--    <p class="block-title h3 text-center">Совместные путешествия</p>-->
+<!--    <div class="benefit active">-->
+<!--      <div class="row display-flex">-->
+<!--        <div class="col-xs-12 col-sm-6 col-md-push-6">-->
+<!--          <div class="benefit-img">-->
+<!--&lt;!&ndash;            <img src="{% static 'img/club/trips-cover.jpg%3F315532801'%}" alt="trips"/>          </div>&ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="col-xs-12 col-sm-6 col-md-pull-6">-->
+<!--          <div class="benefit-inner">-->
+<!--            <div class="benefit-title h4">-->
+<!--              Путешествия по всему миру            </div>-->
+<!--            <div class="benefit-subtitle">-->
+<!--              Туры с Маргуланом - ваша уникальная возможность открыть для себя новые виды, культуру, получить яркие впечатления в компании с Маргуланом и другими известными экспертами в бизнесе, переговорах, инвестициях и личной эффективности.              Экспедиционные туры - насыщенное трансформационное путешествие.              Это ваша возможность в необычной обстановке посмотреть на текущие задачи и планы под новым углом, получить наставничество от Маргулана.              </div>-->
+<!--            <div class="benefit-inner-footer">-->
+<!--              <a href="trips.html" class="btn btn-outline-primary btn-block" target="_blank">Подробнее</a>            </div>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="club-geography block">
+  <div class="container">
+    <p class="block-title h2 text-center">
+      Бизде окуган региондор    </p>
+  </div>
+  <div class="club-geography-carousel scroll-right">
+    <div class="club-geography-carousel-words h1 text-bordered">
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Баткен</div>
+      <div class="club-geography-carousel-item">Ыссык-кол</div>
+      <div class="club-geography-carousel-item">Дубай</div>
+      <div class="club-geography-carousel-item">Москва</div>
+      <div class="club-geography-carousel-item">Ош</div>
+      <div class="club-geography-carousel-item">Стамбул</div>
+      <div class="club-geography-carousel-item">Нарын</div>
+      <div class="club-geography-carousel-item">Баткен</div>
+      <div class="club-geography-carousel-item">Санкт-Петербург</div>
+    </div>
+    <div class="club-geography-carousel-words h1 text-bordered">
+      <div class="club-geography-carousel-item">Нарын</div>
+      <div class="club-geography-carousel-item">Киев</div>
+      <div class="club-geography-carousel-item">Минск</div>
+      <div class="club-geography-carousel-item">Нарын</div>
+      <div class="club-geography-carousel-item">Нью-Йорк</div>
+      <div class="club-geography-carousel-item">Жалал-абад</div>
+      <div class="club-geography-carousel-item">Стамбул</div>
+      <div class="club-geography-carousel-item">Нарын</div>
+      <div class="club-geography-carousel-item">Ыссык-Кол</div>
+      <div class="club-geography-carousel-item">Санкт-Петербург</div>
+    </div>
+  </div>
+  <div class="club-geography-carousel scroll-right">
+    <div class="club-geography-carousel-words h2">
+      <div class="club-geography-carousel-item">Лондон</div>
+      <div class="club-geography-carousel-item">Милан</div>
+      <div class="club-geography-carousel-item">Стокгольм</div>
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Москва</div>
+      <div class="club-geography-carousel-item">Ташкент</div>
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Марсель</div>
+      <div class="club-geography-carousel-item">Нарын</div>
+      <div class="club-geography-carousel-item">Россия</div>
+    </div>
+    <div class="club-geography-carousel-words h2">
+      <div class="club-geography-carousel-item">Лондон</div>
+      <div class="club-geography-carousel-item">Милан</div>
+      <div class="club-geography-carousel-item">Стокгольм</div>
+      <div class="club-geography-carousel-item">Алматы</div>
+      <div class="club-geography-carousel-item">Москва</div>
+      <div class="club-geography-carousel-item">Ташкент</div>
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Казахстан</div>
+      <div class="club-geography-carousel-item">Узбекистан</div>
+      <div class="club-geography-carousel-item">Нарын</div>
+    </div>
+  </div>
+  <div class="club-geography-carousel scroll-right">
+    <div class="club-geography-carousel-words h3 text-bordered">
+      <div class="club-geography-carousel-item">Варшава</div>
+      <div class="club-geography-carousel-item">Шымкент</div>
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Лион</div>
+      <div class="club-geography-carousel-item">Манчестер</div>
+      <div class="club-geography-carousel-item">Самара</div>
+      <div class="club-geography-carousel-item">Владивосток</div>
+      <div class="club-geography-carousel-item">Минск</div>
+      <div class="club-geography-carousel-item">Чуй</div>
+      <div class="club-geography-carousel-item">Алматы</div>
+      <div class="club-geography-carousel-item">Бишкек</div>
+    </div>
+    <div class="club-geography-carousel-words h3 text-bordered">
+      <div class="club-geography-carousel-item">Бишкек</div>
+      <div class="club-geography-carousel-item">Москва</div>
+      <div class="club-geography-carousel-item">Баткен</div>
+      <div class="club-geography-carousel-item">Турция</div>
+      <div class="club-geography-carousel-item">Стамбул</div>
+<!--      <div class="club-geography-carousel-item">Торонто</div>-->
+<!--      <div class="club-geography-carousel-item">Вена</div>-->
+<!--      <div class="club-geography-carousel-item">Львов</div>-->
+      <div class="club-geography-carousel-item">Ош</div>
+<!--      <div class="club-geography-carousel-item">Сидней</div>-->
+<!--      <div class="club-geography-carousel-item">Вильнюс</div>-->
+    </div>
+  </div>
+<!--  <div class="club-geography-carousel scroll-right">-->
+<!--    <div class="club-geography-carousel-words h4">-->
+<!--      <div class="club-geography-carousel-item">Гамбург</div>-->
+<!--      <div class="club-geography-carousel-item">Рим</div>-->
+<!--      <div class="club-geography-carousel-item">Сан-Паулу</div>-->
+<!--      <div class="club-geography-carousel-item">Чикаго</div>-->
+<!--      <div class="club-geography-carousel-item">Токио</div>-->
+<!--      <div class="club-geography-carousel-item">Манила</div>-->
+<!--      <div class="club-geography-carousel-item">Стамбул</div>-->
+<!--      <div class="club-geography-carousel-item">Париж</div>-->
+<!--      <div class="club-geography-carousel-item">Кельн</div>-->
+<!--      <div class="club-geography-carousel-item">Гомель</div>-->
+<!--      <div class="club-geography-carousel-item">Берн</div>-->
+<!--      <div class="club-geography-carousel-item">Мальмё</div>-->
+<!--      <div class="club-geography-carousel-item">Копенгаген</div>-->
+<!--      <div class="club-geography-carousel-item">Подгорица</div>-->
+<!--      <div class="club-geography-carousel-item">Калининград</div>-->
+<!--    </div>-->
+<!--    <div class="club-geography-carousel-words h4">-->
+<!--      <div class="club-geography-carousel-item">Гамбург</div>-->
+<!--      <div class="club-geography-carousel-item">Рим</div>-->
+<!--      <div class="club-geography-carousel-item">Сан-Паулу</div>-->
+<!--      <div class="club-geography-carousel-item">Чикаго</div>-->
+<!--      <div class="club-geography-carousel-item">Токио</div>-->
+<!--      <div class="club-geography-carousel-item">Манила</div>-->
+<!--      <div class="club-geography-carousel-item">Стамбул</div>-->
+<!--      <div class="club-geography-carousel-item">Париж</div>-->
+<!--      <div class="club-geography-carousel-item">Кельн</div>-->
+<!--      <div class="club-geography-carousel-item">Гомель</div>-->
+<!--      <div class="club-geography-carousel-item">Берн</div>-->
+<!--      <div class="club-geography-carousel-item">Мальмё</div>-->
+<!--      <div class="club-geography-carousel-item">Копенгаген</div>-->
+<!--      <div class="club-geography-carousel-item">Подгорица</div>-->
+<!--      <div class="club-geography-carousel-item">Калининград</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="club-geography-carousel scroll-right">-->
+<!--    <div class="club-geography-carousel-words h5 text-bordered">-->
+<!--      <div class="club-geography-carousel-item">Палермо</div>-->
+<!--      <div class="club-geography-carousel-item">Харьков</div>-->
+<!--      <div class="club-geography-carousel-item">Оттава</div>-->
+<!--      <div class="club-geography-carousel-item">Осака</div>-->
+<!--      <div class="club-geography-carousel-item">Лос‑Анжелес</div>-->
+<!--      <div class="club-geography-carousel-item">Порту</div>-->
+<!--      <div class="club-geography-carousel-item">Мехико</div>-->
+<!--      <div class="club-geography-carousel-item">Мюнхен</div>-->
+<!--      <div class="club-geography-carousel-item">Барселона</div>-->
+<!--      <div class="club-geography-carousel-item">Милан</div>-->
+<!--      <div class="club-geography-carousel-item">Салоники</div>-->
+<!--      <div class="club-geography-carousel-item">Люксембург</div>-->
+<!--      <div class="club-geography-carousel-item">Познань</div>-->
+<!--      <div class="club-geography-carousel-item">Хельсинки</div>-->
+<!--      <div class="club-geography-carousel-item">Цюрих</div>-->
+<!--    </div>-->
+<!--    <div class="club-geography-carousel-words h5 text-bordered">-->
+<!--      <div class="club-geography-carousel-item">Палермо</div>-->
+<!--      <div class="club-geography-carousel-item">Харьков</div>-->
+<!--      <div class="club-geography-carousel-item">Оттава</div>-->
+<!--      <div class="club-geography-carousel-item">Осака</div>-->
+<!--      <div class="club-geography-carousel-item">Лос‑Анжелес</div>-->
+<!--      <div class="club-geography-carousel-item">Порту</div>-->
+<!--      <div class="club-geography-carousel-item">Мехико</div>-->
+<!--      <div class="club-geography-carousel-item">Мюнхен</div>-->
+<!--      <div class="club-geography-carousel-item">Барселона</div>-->
+<!--      <div class="club-geography-carousel-item">Милан</div>-->
+<!--      <div class="club-geography-carousel-item">Салоники</div>-->
+<!--      <div class="club-geography-carousel-item">Люксембург</div>-->
+<!--      <div class="club-geography-carousel-item">Познань</div>-->
+<!--      <div class="club-geography-carousel-item">Хельсинки</div>-->
+<!--      <div class="club-geography-carousel-item">Цюрих</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="club-geography-carousel scroll-right">-->
+<!--    <div class="club-geography-carousel-words h6">-->
+<!--      <div class="club-geography-carousel-item">Лейпциг</div>-->
+<!--      <div class="club-geography-carousel-item">Остин</div>-->
+<!--      <div class="club-geography-carousel-item">Минск</div>-->
+<!--      <div class="club-geography-carousel-item">Флоренция</div>-->
+<!--      <div class="club-geography-carousel-item">Тихуана</div>-->
+<!--      <div class="club-geography-carousel-item">Монреаль</div>-->
+<!--      <div class="club-geography-carousel-item">Валенсия</div>-->
+<!--      <div class="club-geography-carousel-item">Лиссабон</div>-->
+<!--      <div class="club-geography-carousel-item">Париж</div>-->
+<!--      <div class="club-geography-carousel-item">Актобе</div>-->
+<!--      <div class="club-geography-carousel-item">Санкт-Петербург</div>-->
+<!--      <div class="club-geography-carousel-item">Караганда</div>-->
+<!--      <div class="club-geography-carousel-item">Самарканд</div>-->
+<!--      <div class="club-geography-carousel-item">Афины</div>-->
+<!--      <div class="club-geography-carousel-item">Зальцбург</div>-->
+<!--      <div class="club-geography-carousel-item">Женева</div>-->
+<!--      <div class="club-geography-carousel-item">Екатеринбург</div>-->
+<!--    </div>-->
+<!--    <div class="club-geography-carousel-words h6">-->
+<!--      <div class="club-geography-carousel-item">Лейпциг</div>-->
+<!--      <div class="club-geography-carousel-item">Остин</div>-->
+<!--      <div class="club-geography-carousel-item">Минск</div>-->
+<!--      <div class="club-geography-carousel-item">Флоренция</div>-->
+<!--      <div class="club-geography-carousel-item">Тихуана</div>-->
+<!--      <div class="club-geography-carousel-item">Монреаль</div>-->
+<!--      <div class="club-geography-carousel-item">Валенсия</div>-->
+<!--      <div class="club-geography-carousel-item">Лиссабон</div>-->
+<!--      <div class="club-geography-carousel-item">Париж</div>-->
+<!--      <div class="club-geography-carousel-item">Актобе</div>-->
+<!--      <div class="club-geography-carousel-item">Санкт-Петербург</div>-->
+<!--      <div class="club-geography-carousel-item">Караганда</div>-->
+<!--      <div class="club-geography-carousel-item">Самарканд</div>-->
+<!--      <div class="club-geography-carousel-item">Афины</div>-->
+<!--      <div class="club-geography-carousel-item">Зальцбург</div>-->
+<!--      <div class="club-geography-carousel-item">Женева</div>-->
+<!--      <div class="club-geography-carousel-item">Екатеринбург</div>-->
+<!--    </div>-->
+  </div>
+</section>
+<section class="club-how-to block">
+  <div class="container">
+    <p class="block-title h2 text-center">Процесс вступления в клуб</p>
+    <div class="row display-flex center">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="1">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/contact-form.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Выбираете пакет участия          </p>
+          <p class="text-small">
+            Подаете заявку и выбираете пакет участия с вашим менеджером          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="2">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/debit-card.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Проходите отбор          </p>
+          <p class="text-small">
+            Проходите отбор в кандидаты членов Клуба и оплачиваете выбранный пакет участия (на 6 месяцев)          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="3">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/checklist.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Проходите онбординг          </p>
+          <p class="text-small">
+            Проходите онбординг и заполняете подробную анкету о себе, синхронизируете гугл календарь и телеграмм с Платформой          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="4">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/coworking.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Участвуете в жизни клуба          </p>
+          <p class="text-small">
+            Участвуете во всех мероприятиях и встречах Клуба          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="5">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/counting.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Мы принимаем решение о вашем членстве в клубе          </p>
+          <p class="text-small">
+            Через 6 месяцев после проверки и собеседований мы принимаем решение о вашем полноправном членстве в Клубе          </p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="club-how-to-item" data-number="6">
+          <div class="club-how-to-item-icon">
+            <img src="{% static 'img/icons/hired.svg'%}" alt="club-how-to-item-icon"/>          </div>
+          <p class="h5 text-small">
+            Становитесь полноправным членом клуба          </p>
+          <p class="text-small">
+            Оплачиваете выбранный годовой пакет членства и становитесь полноправным членом клуба          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials block">
+  <div class="container">
+    <p class="block-title h2 text-center">Отзывы</p>
+    <br>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="slick-slider-wrapper">
+          <div class="school-testimonials-slider slick-slider slick-adaptive-height">
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Крутое тяжеловесное интервью про покупки/продажи компаний, яхты, вертолеты и самолеты.                      Для тех, кто не помнит героя, это он рассказывал в видео как торговался по компании и поднял итоговую цену в разы.                      Звук только жесть.                      <a href="https://t.me/TorbosovLife/880" class="text-muted" target="_blank">Смотреть полностью</a>
+                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Садыр жапаров                        </p>
+                        <p class="post-speaker-subtitle">
+                          СЕО Whitewill                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Первый влог с Маргуланом собрал больше 800 000 просмотров, второй получил более 4500 лайков!                      Невероятный инвестор и предприниматель, который начал свой путь пастухом, и стал долларовым миллиардером.                      <a href="https://www.youtube.com/watch?v=1hJqwcqqsI8&t=36s" class="text-muted" target="_blank">Смотреть полностью</a>
+                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Андрей Федорив                        </p>
+                        <p class="post-speaker-subtitle">
+                          СЕO Fedoriv Group                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Твой опыт бесценен!                      Ты бьешь в самое сердце и в этом твой успех, любого бизнесмена!                      У меня есть шанс научиться на твоих ошибках.                      Этот опыт бесценен!                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Евгений Черняк                        </p>
+                        <p class="post-speaker-subtitle">
+                          CEO Global Spirit, блогер BIG MONEY                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Твое влияние на нашу культуру и на общественную жизнь очень велико!                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Арманжан Байтасов                        </p>
+                        <p class="post-speaker-subtitle">
+                          Входит в список 50 самых влиятельных бизнесменов страны (Forbes Kazakhstan)                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Курсы Образовательной платформы Маргулана - один из самых мощных инструментов для прокачки личной эффективности для собственника любого бизнеса.                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Игорь Рыбаков                        </p>
+                        <p class="post-speaker-subtitle">
+                          Предприниматель, участник списка Forbes, инвестор, основатель X10 ACADEMY                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial">
+                <div class="testimonial-inner">
+                  <p>
+                    <em>
+                      Курс "Кайдзен планирование" перевернул мое представление о постановке и достижении любых целей.                      Благодаря Кайдзен все можно достичь намного быстрее и без лишних усилий.                    </em>
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="post-speaker">
+                        <p class="post-speaker-title">
+                          Нурлан Сабуров                        </p>
+                        <p class="post-speaker-subtitle">
+                          Известный казахский и российский комик, выступающий в жанре стендап                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slick-slider-wrapper">
+          <div class="school-testimonials-avatars-slider slick-slider">
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/logored.png'%}" alt="Олег Торбосов"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-2.jpg%3F315532801'%}" alt="Андрей Федорив"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-3.jpg%3F315532801'%}" alt="Евгений Черняк"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-4.jpg%3F315532801'%}" alt="Арманжан Байтасов"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-5.jpg%3F315532801'%}" alt="Игорь Рыбаков"/>              </div>
+            </div>
+            <div>
+              <div class="testimonial-avatar">
+                <img src="{% static 'img/review-6.jpg%3F315532801'%}" alt="Нурлан Сабуров"/>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="packages" class="club-packages block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <p class="block-title h2 text-center">
+            Выберите свой пакет участия          </p>
+          <p class="block-subtitle">
+            Мы избирательно и ответственно относимся к отбору участников так как репутация Клуба и его участников наш приоритет.            Мы предлагаем вам на пол года стать кандидатом в резиденты Кайдзен Клуба, при этом все права и функции для вас доступны в полном объеме.            Наблюдательный совет Клуба за это время принимает решение о дальнейшем постоянном резидентстве в Кайдзен Клубе          </p>
+        </div>
+      </div>
+      <div class="row display-flex center">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package">
+                            <div class="package-title">Бизнес нолдон онлайн</div>
+              <div class="package-price">
+                <span>
+                  10 000 сом                </span>
+                              </div>
+                              <p class="package-note">
+                  Онлайн формат участия в мероприятиях клуба и обучение в Кайдзен Школе                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Сатып алуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Арыз калтыруу</a>              </div>
+            </div>
+          </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package popular">
+                              <div class="package-flag">Сунуштайбыз</div>
+                            <div class="package-title">Бизнес нолдон офлайн </div>
+              <div class="package-price">
+                <span>
+                  25 000 сом                 </span>
+                              </div>
+                              <p class="package-note">
+                  Доступ ко всем оффлайн и онлайн встречам Клуба, консьерж поддержка 24/7, обучение в Кайдзен Школе, участие в слетах Клуба                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Сатып алуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Арыз калтыруу </a>              </div>
+            </div>
+          </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="package">
+                            <div class="package-title">Бизнес тренерлерден жардам алуу </div>
+              <div class="package-price">
+                <span>
+                  20 000 сом                </span>
+                              </div>
+                              <p class="package-note">
+                  Полный доступ ко всем программам Клуба и первые места на оффлайн мероприятиях, доступ к Кайдзен Школе и личным закрытым встречам с Маргуланом                </p>
+                            <div class="package-footer">
+                                  <a href="{% url 'registrations' %}" class="btn btn-default-primary btn-lg btn-block">Сатып алуу</a>                                <a href="{% url 'clas' %}" class="btn btn-link-dark btn-block">Арыз калтыруу</a>              </div>
+            </div>
+          </div>
+              </div>
+                      <div class="packages-help-block">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="packages-help-block-description">
+                <p class="h3 text-uppercase">
+                                </p>
+                <div class="row">
+                  <div class="col-sm-8 col-md-12 col-lg-10">
+                    <p>
+                                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+            </div>
+  </section>
+<section class="faq block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-lg-2">
+        <div class="faq-help-block-description">
+          <p class="h2 block-title">Остались вопросы?</p>
+        </div>
+      </div>
+      <div class="col-sm-8 col-lg-8 col-lg-offset-2">
+        <div class="panel-group panel-group-bordered" id="faq-accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default active">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-1">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-1" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-1">
+                  Почему я не могу купить годовое членство в Клубе сразу?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-1" class="panel-collapse collapse in" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-1">
+              <div class="panel-body">
+                <p>
+                  Мы очень ответственно относимся к отбору членов Клуба во избежание мошенничества и порчи репутации Кайдзен Клуба и его участников.                  Потому все, кто желает вступить в Кайдзен Клуб, могут стать на полгода кандидатами в члены Клуба (со всеми правами и функциями члена Клуба), тем самым протестировав все функции и программы Клуба, а наблюдательный совет Клуба, в свою очередь, сможет дать оценку надежности кандидата для дальнейшего полноправного членства в Кайдзен Клубе.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-2">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-2" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-2">
+                  Какие этапы проходит кандидат перед принятием его в члены Клуба?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-2" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-2">
+              <div class="panel-body">
+                <p>
+                  По истечении полгода все кандидаты в члены Кайдзен клуба поочередно проходят собеседования со службой безопасности, администрацией и менеджментом Кайдзен Клуба, после чего принимается решение о полноправном членстве в Кайдзен Клубе.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-3">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-3" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-3">
+                  Как стать кандидатом в члены Клуба?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-3" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-3">
+              <div class="panel-body">
+                <ul>
+                  <li>
+                    Вы подаете заявку на вступление.                  </li>
+                  <li>
+                    Заполняете анкету участника.                  </li>
+                  <li>
+                    С вами связывается менеджер, проводит небольшое собеседование.                    Если все хорошо, то вы оплачиваете.                  </li>
+                  <li>
+                    После оплаты вы получаете доступ к личному кабинету на платформе.                  </li>
+                  <li>
+                    Проходите онбординг, заполняете анкету о себе, синхронизируете гугл календарь и телеграмм с платформой.                  </li>
+                  <li>
+                    Вы получаете бизнес консьержа, который будет отвечать на все ваши вопросы связанные с клубной жизнью, знакомить вас с другими участниками, помогать с программами обучения.                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-4">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-4" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-4">
+                  Какие возможности доступны в Клубе кандидату?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-4" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-4">
+              <div class="panel-body">
+                <p>
+                  Кандидат в члены Кайдзен Клуба получает все те же возможности, что и полноправный член Кайдзен Клуба в соответствии с выбранным пакетом участия, но ограниченный во времени на полгода.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-5">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-5" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-5">
+                  Как получить доступ к курсам Кайдзен Школы?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-5" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-5">
+              <div class="panel-body">
+                <p>
+                  Абсолютно все кандидаты и члены Кайдзен Клуба получают доступ ко всем курсам и мастер-классам Кайдзен Школы на период действия выбранного пакета участия в Клубе.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-6">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-6" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-6">
+                  Какие привилегии у кандидатов и членов Клуба?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-6" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-6">
+              <div class="panel-body">
+                <p>
+                  Каждый кандидат и член Кайдзен Клуба получает право приоритетной регистрации на все все экспедиционные программы Маргулана и спикеров Клуба в рамках Образовательной платформы Маргулана, а также весь функционал и сервисы в соответствии с выбранным пакетом участия в Кайдзен Клубе.                  Кандидаты - на полгода, члены Клуба - на год.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq-accordion-panel-heading-7">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#faq-accordion"
+                   href="kaizen-club.html#faq-accordion-panel-7" aria-expanded="true"
+                   aria-controls="faq-accordion-panel-7">
+                  Что, если я не пройду проверку и не получу возможность стать полноправным членом Клуба?                </a>
+              </h4>
+            </div>
+            <div id="faq-accordion-panel-7" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="faq-accordion-panel-heading-7">
+              <div class="panel-body">
+                <p>
+                  Администрация Кайдзен Клуба по согласованию с руководством предоставит вам еще одну возможность на полгода побыть кандидатом и пройти повторную проверку и необходимые собеседования.                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Club modals-->
+<div class="modal fade" id="modal-benefit-1" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Слеты клуба с участием резидентов со всего мира</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Слеты проводятся 2 раза в год в формате масштабных форумов, pre-party, after-party c Маргуланом.          Локации: Анталия, ОАЭ и другие.        </p>
+        <p>
+          Для кандидатов и членов Кайдзен Клуба на пакетах "Бизнес" и "Премиум" доступно участие в оффлайн слетах Клуба, которые проводятся 2 раза в год.          Дата первого слета Клуба - 25 сентября 2021 в Анталии.          Спикеры слета: Маргулан Сейсембай, Игорь Рыбаков, Нурлан Сабуров, Дмитрий Гордон.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Встречи с Маргуланом Сейсембаем и спикерами клуба</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Ежемесячные закрытые онлайн встречи членов клуба - владельцев и топ-менеджеров крупных компаний.          Наработанный опыт, успешные кейсы, подводные камни, мотивация, новые возможности.          У каждого участника встреч есть возможность задать вопрос и получить ответ сразу.        </p>
+        <p>
+          Каждую неделю участников всех пакетов Клуба ждет онлайн-встречи с Маргуланом и Спикерами Клуба.          Встречи будут проходить в zoom, на которых возможны разборы и обсуждения текущих проектов, важных вопросов личностного роста и развития бизнесов участников Клуба.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-3" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Доступ к обучающим программам Кайдзен Школы</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Из любой точки мира и в любое время обучайтесь ценным инструментам роста и масштабирования личной эффективности и своего бизнеса.        </p>
+        <p>
+          Каждый кандидат и член Кайдзен Клуба получает полный доступ к мастер-классам, закрытым вебинарам и онлайн-курсам Образовательной платформы Маргулана на время членства в Клубе.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-4" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Оффлайн встречи в вашем городе</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Каждый месяц в вашем городе будут проводиться бизнес-митинги с другими членами Клуба для знакомства, обмена опытом, нетворкинга и развития.        </p>
+        <p>
+          Как только в вашем городе набирается 10 участников Кайдзен Клуба, ваш бизнес-консьерж подберет для вас локацию, время и тему оффлайн встречи.          Такие встречи вы с группой в своем городе можете проводить каждый месяц.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-5" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Мастермайнд сессии</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Каждый месяц онлайн встречи членов клуба с детальными разборами конкретных кейсов и вопросов членов Клуба.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-6" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Нетворкинг встречи по нишам</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Каждый участник при вступлении в Кайдзен Клуб имеет возможность находить партнеров и наставников в своей нише.          Обмениваться опытом, кейсами и компетенциями в своей сфере.          Это дает ощутимые результаты в развитии и масштабировании проектов.        </p>
+        <p>
+          Каждую неделю все участники Кайдзен Клуба получают от сервиса бизнес-консьержей расписание встреч по нишам, участие в которых неминуемо поможет масштабировать ваши проекты и усилить конкурентоспособность на рынке.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-7" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Закрытые чаты для нетворкинга и взаимопомощи</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Поддержка 24/7 с консьерж сервисом для максимально быстрого решения любого вопроса.          Члены Кайдзен Клуба получают доступ в Telegram чат с Маргуланом, а также закрытые экспертные чаты, что значительно ускоряет получение ответов на свои запросы и действительно нужной и ценной информации.        </p>
+        <p>
+          Каждый участник Кайдзен Клуба получает доступ в ряд закрытых чатов, в которых можно не только задать вопрос напрямую Маргулану и членам Клуба, а и найти надежных проверенных партнеров в ваши проекты.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-benefit-8" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title h4">Система бадди</p>
+      </div>
+      <div class="modal-body">
+        <p>
+          Кайдзен Клуб предлагает всем членам и кандидатам на пакетах "Бизнес" и "Премиум" стать бадди для другого участника на том же пакете.        </p>
+        <p>
+          Система бадди подразумевает поддержку в достижении целей (личных или корпоративных), а также в приобретении новых навыков.          Эта система усилит в разы эффект от обучения в Кайдзен Школе и участия во всех встречах и программах Кайдзен Клуба.          Бадди - это по сути близкий друг, который выручает участника в трудных ситуациях и оказывает ему моральную поддержку.          Бизнес консьержи Кайдзен Клуба помогут Вам выбрать своего бадди и планировать регулярные онлайн встречи для взаимного роста и поддержки.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End club modals-->
+{% endblock %}
